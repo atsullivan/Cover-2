@@ -1,0 +1,202 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-image: url(https://unsplash.it/1700);
+  background-image: url(../img/bg3.jpg);
+  background-size: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.sequel {
+  font-family: "RissaTypeface";
+  color: #E42F45;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand > a {
+  font-family: 'Ailerons';
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: 1s;
+}
+
+.masthead-brand > a:hover {
+  text-decoration: none;
+  color: #E42F45;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #B42B3F;
+  -webkit-transition: 1s;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  color: #7E1E2C;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom: 2px solid #E42F45;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Date/Time
+ */
+
+.rotate {
+  -webkit-transform: rotate(-12deg);
+}
+
+#timebox {
+  font-size: 60px;
+  font-weight: 300;
+  /*display: inline;*/
+  font-family: "Lato";
+  font-family: "Ailerons";
+}
+
+#daybox {
+  font-size: 150px;
+  font-family: "Handletter";
+}
+
+#datebox {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #E42F45;
+  color: transparent;
+  font-size: 25px;
+  font-weight: 300;
+  /*display: inline;*/
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #7E1E2C;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.mastfoot a {
+  color: white;
+}
+
+.myname {
+  -webkit-transition: 1s;
+}
+
+.myname:hover {
+  text-decoration: none;
+  color: #E42F45;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}
